@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+}
+
+#logo {
+    width: 100px; /* Slightly smaller logo */
+    height: auto;
+    margin-top: 10px; /* Keep it close to the top */
+}
+
+#top-div {
+    width: 100vw;
+    height: 330px;
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/343/944/916/abstract-shapes-fluid-liquid-artwork-hd-wallpaper-848864e2587e0d2ec12e08d272e2d338.jpg');
+    background-size: 250%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stacks logo and buttons vertically */
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the top */
+    padding-top: 20px; /* Adjusted the padding to bring logo closer to top */
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    margin-top: 10px; /* Reduced margin to move buttons closer to the logo */
+    width: 100%; /* Make the button container take full width */
+    padding: 0 20px; /* Added padding for button spacing on sides */
+}
+
+.btn {
+    background-color: #333; /* Dark gray color */
+    color: white;
+    border: none;
+    padding: 12px 0; /* Slightly reduced padding to make buttons shorter */
+    margin: 5px 0; /* Reduced margin to make buttons closer to each other */
+    cursor: pointer;
+    font-size: 15px; /* Font size for readability */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is applied to buttons */
+    text-transform: uppercase; /* Capitalize button text */
+    width: 100%; /* Make buttons take full width */
+}
+
+.btn:hover {
+    background-color: #555; /* Slightly lighter dark gray for hover effect */
+}
+
+/* New section styling */
+#prebuilt-pc-section {
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px; /* Reduced top padding to bring content closer to the top */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+#prebuilt-pc-section h1 {
+    font-size: 22px; /* Large text size for the title */
+    color: #333; /* Dark gray color */
+    text-transform: uppercase; /* Capitalize all the text */
+    margin-top: 0; /* Remove any top margin */
+}
+
+#prebuilt-pc-section p {
+    font-size: 10px; /* Smaller text size for the paragraph */
+    color: #666; /* Lighter gray color */
+    line-height: 1.6; /* Add space between lines */
+    margin-top: 15px;
+    text-transform: uppercase; /* Capitalize all the text */
+}
+
+/* Ultra Gaming PC product styling */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.product-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.product-specs {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.spec-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.spec-label {
+    font-weight: 600;
+    margin-right: 5px;
+    min-width: 80px;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #666;
+    margin-top: 15px;
+}
+
+.product-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #555;
+}
