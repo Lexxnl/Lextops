@@ -290,3 +290,76 @@ a.email-link:focus {
     outline: 2px solid #a7a7a7; /* Outline for focus */
     outline-offset: 2px; /* Space between outline and link */
 }
+
+/* Main container styles */
+#prebuilt-pc-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+/* Remove existing flex layout from product containers */
+.products-container {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+/* Make product cards display side by side */
+@media (min-width: 768px) {
+    /* Create a 2-column layout */
+    .products-container {
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+    }
+    
+    .products-container:nth-child(even) {
+        margin-right: 0;
+    }
+    
+    /* Clear the float after each pair */
+    .products-container:nth-child(2n+1) {
+        clear: left;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Create a 3-column layout */
+    .products-container {
+        width: 31%;
+        margin-right: 3.5%;
+    }
+    
+    .products-container:nth-child(even) {
+        margin-right: 3.5%;
+    }
+    
+    .products-container:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    /* Clear the float after each triplet */
+    .products-container:nth-child(2n+1) {
+        clear: none;
+    }
+    
+    .products-container:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+/* Add clearfix to the parent */
+#prebuilt-pc-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Make sure product cards are full width of their container */
+.product-card {
+    width: 100%;
+}
