@@ -171,3 +171,122 @@ body {
 .product-button:hover {
     background-color: #555;
 }
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #484a4b;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #00a8f0;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00a8f0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+/* Responsive adjustments for footer */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        min-width: 100%;
+    }
+}
+
+/* Style for the clickable email link */
+a.email-link {
+    color: #a7a7a7; /* Set an attractive color (light blue) */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Increase the font size slightly */
+    font-weight: 600; /* Make the text bold */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+a.email-link:hover {
+    color: #a7a7a7; /* Darker shade of blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the text on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: Add a focus effect for accessibility */
+a.email-link:focus {
+    outline: 2px solid #a7a7a7; /* Outline for focus */
+    outline-offset: 2px; /* Space between outline and link */
+}
