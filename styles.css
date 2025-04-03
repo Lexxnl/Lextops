@@ -15,12 +15,13 @@ body {
     width: 100px; /* Slightly smaller logo */
     height: auto;
     margin-top: 10px; /* Keep logo close to the top */
+    margin-bottom: 20px; /* Keep logo close to the top */
 }
 
 /* Top section with background image */
 #top-div {
     width: 100vw;
-    height: 330px;
+    min-height: 100px;
     background-image: url('https://r4.wallpaperflare.com/wallpaper/343/944/916/abstract-shapes-fluid-liquid-artwork-hd-wallpaper-848864e2587e0d2ec12e08d272e2d338.jpg');
     background-size: 250%;
     background-position: center;
@@ -36,19 +37,20 @@ body {
 /* Button container styling */
 #buttons {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    margin-top: 10px; /* Reduced margin */
-    width: 100%; /* Full width for buttons */
-    padding: 0 20px; /* Added padding for spacing */
+    flex-direction: row; /* Stack buttons horizontally by default */
+    width: 80%; /* Full width for buttons */
+    margin-bottom: 10px;
 }
+
+
 
 /* Button styling */
 .btn {
     background-color: #333;
     color: white;
     border: none;
-    padding: 12px 0;
-    margin: 5px 0;
+    padding: 12px 0px;
+    margin: 5px 0px;
     cursor: pointer;
     font-size: 15px;
     border-radius: 5px;
@@ -56,6 +58,21 @@ body {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     width: 100%; /* Full width buttons */
+}
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 768px) {
+    #buttons {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+}
+
+/* Responsive design for mobile screens */
+@media screen and (min-width: 768px) {
+    .btn {
+        width: 100%; /* Full width buttons on larger screens */
+        margin: 5px 5px;
+    }
 }
 
 /* Button hover effect */
