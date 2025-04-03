@@ -1,25 +1,22 @@
-/* Reset default margins, padding, and box-sizing for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Apply global font family */
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Styling for the logo */
 #logo {
-    width: 100px; /* Slightly smaller logo */
+    width: 100px;
     height: auto;
-    margin-top: 10px; /* Keep logo close to the top */
-    margin-bottom: 20px; /* Keep logo close to the top */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-/* Top section with background image */
-#top-div {
+/* Header styles */
+#header {
     width: 100vw;
     min-height: 100px;
     background-image: url('https://r4.wallpaperflare.com/wallpaper/343/944/916/abstract-shapes-fluid-liquid-artwork-hd-wallpaper-848864e2587e0d2ec12e08d272e2d338.jpg');
@@ -28,24 +25,20 @@ body {
     background-repeat: no-repeat;
     color: white;
     display: flex;
-    flex-direction: column; /* Stack logo and buttons vertically */
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align content to the top */
-    padding-top: 20px; /* Adjust padding */
+    justify-content: flex-start;
+    padding-top: 20px;
 }
 
-/* Button container styling */
-#buttons {
+#header-buttons {
     display: flex;
-    flex-direction: row; /* Stack buttons horizontally by default */
-    width: 80%; /* Full width for buttons */
+    flex-direction: row;
+    width: 80%;
     margin-bottom: 10px;
 }
 
-
-
-/* Button styling */
-.btn {
+.header-button {
     background-color: #333;
     color: white;
     border: none;
@@ -57,152 +50,27 @@ body {
     transition: background-color 0.3s ease;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    width: 100%; /* Full width buttons */
+    width: 100%;
 }
 
-/* Responsive design for mobile screens */
 @media screen and (max-width: 768px) {
-    #buttons {
-        flex-direction: column; /* Stack buttons vertically on mobile */
+    #header-buttons {
+        flex-direction: column;
     }
 }
 
-/* Responsive design for mobile screens */
 @media screen and (min-width: 768px) {
-    .btn {
-        width: 100%; /* Full width buttons on larger screens */
+    .header-button {
+        width: 100%;
         margin: 5px 5px;
     }
 }
 
-/* Button hover effect */
-.btn:hover {
+.header-button:hover {
     background-color: #555;
 }
 
-/* Section styling for prebuilt PC */
-#prebuilt-pc-section {
-    width: 100%;
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #f5f5f5;
-}
-
-#prebuilt-pc-section h1 {
-    font-size: 22px;
-    color: #333;
-    text-transform: uppercase;
-    margin-top: 0;
-}
-
-#prebuilt-pc-section p {
-    font-size: 10px;
-    color: #666;
-    line-height: 1.6;
-    margin-top: 15px;
-    text-transform: uppercase;
-}
-
-/* Product container for ultra gaming PCs */
-.products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-/* Product card styling */
-.product-card {
-    width: 320px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    background-color: white;
-    transition: transform 0.3s ease;
-}
-
-/* Hover effect for product cards */
-.product-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Image container inside product card */
-.product-image {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-}
-
-.product-image img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-}
-
-/* Product details section inside product card */
-.product-details {
-    padding: 20px;
-}
-
-.product-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.product-specs {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-/* Styling for specification items */
-.spec-item {
-    display: flex;
-    margin-bottom: 5px;
-}
-
-.spec-label {
-    font-weight: 600;
-    margin-right: 5px;
-    min-width: 80px;
-}
-
-/* Price and button styling for product card */
-.product-price {
-    font-size: 22px;
-    font-weight: 700;
-    color: #666;
-    margin-top: 15px;
-}
-
-.product-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.product-button:hover {
-    background-color: #555;
-}
-
-/* Footer Styling */
+/* Footer styles */
 .footer {
     background-color: #333;
     color: #fff;
@@ -210,7 +78,6 @@ body {
     margin-top: 50px;
 }
 
-/* Footer content and layout */
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -226,7 +93,6 @@ body {
     padding: 0 15px;
 }
 
-/* Footer section headings */
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -245,14 +111,12 @@ body {
     background-color: #484a4b;
 }
 
-/* Footer section paragraphs */
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* List and link styles in footer */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -272,7 +136,6 @@ body {
     color: #00a8f0;
 }
 
-/* Social media icon styling */
 .social-icons {
     display: flex;
     flex-wrap: wrap;
@@ -284,13 +147,13 @@ body {
     text-decoration: none;
     margin-right: 15px;
     transition: color 0.3s ease;
+    width: 50px;
 }
 
 .social-icon:hover {
     color: #00a8f0;
 }
 
-/* Footer bottom section */
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -299,14 +162,12 @@ body {
     font-size: 14px;
 }
 
-/* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .footer-section {
         min-width: 100%;
     }
 }
 
-/* Style for clickable email link */
 a.email-link {
     color: #a7a7a7;
     text-decoration: none;
@@ -321,24 +182,7 @@ a.email-link:hover {
     text-decoration: underline;
 }
 
-/* Focus effect for accessibility on email link */
 a.email-link:focus {
     outline: 2px solid #a7a7a7;
     outline-offset: 2px;
-}
-
-/* Container for prebuilt PC section */
-#prebuilt-pc-section {
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 30px 15px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-.products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }

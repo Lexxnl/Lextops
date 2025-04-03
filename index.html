@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lextops</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Added Poppins font -->
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E04ERHXC4T"></script>
@@ -16,16 +18,15 @@
     gtag('config', 'G-E04ERHXC4T');
     </script>
     <!-- End Google Analytics 4 -->
-
 </head>
 <body>
-    <div id="top-div">
+    <div id="header">
         <img src="Logo.png" alt="Logo" id="logo">
-        <div id="buttons">
-            <button class="btn">Home</button>
-            <button class="btn">Winkel</button>
-            <button class="btn">Build Help</button>
-            <button class="btn">Contact</button>
+        <div id="header-buttons">
+            <button class="header-button">Home</button>
+            <button class="header-button">Winkel</button>
+            <button class="header-button">Build Help</button>
+            <button class="header-button">Contact</button>
         </div>
     </div>
 
@@ -38,8 +39,8 @@
         <div class="products-container">
             <!-- Ultra Gaming PC Product Card -->
             <div class="product-card">
-                <div class="product-image">
-                    <img src="0003-alt.png" alt="Ultra Gaming PC">
+                <div class="product-image" >
+                    <a href="ultra-gaming-pc.html"><img src="0003-alt.png" alt="Ultra Gaming PC"></a>
                 </div>
                 <div class="product-details">
                     <h3 class="product-title">Ultra Gaming PC</h3>
@@ -204,7 +205,6 @@
 
                 </div>
             </div>
-            
         </div>
     </div>
 
@@ -236,7 +236,7 @@
             <div class="footer-section">
                 <h3>Volg Ons</h3>
                 <div class="social-icons">
-                    <a href="#" class="social-icon">YouTube</a>
+                    <a href="https://www.youtube.com/@LextopsPCs" class="social-icon"><img class="social-icon" src="https://img.icons8.com/m_outlined/512/FFFFFF/youtube.png"></a>
                 </div>
             </div>
         </div>
@@ -245,5 +245,8 @@
             <p>&copy; 2025 Lextops. Alle rechten voorbehouden.</p>
         </div>
     </footer>
+
+
+
 </body>
 </html>

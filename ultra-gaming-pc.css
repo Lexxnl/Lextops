@@ -1,0 +1,97 @@
+/* Style for the product gallery slider */
+.product-gallery {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gallery-image {
+    width: 100%;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-image.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Navigation buttons */
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.nav-button {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button.active {
+    background-color: #333;
+}
+
+.navigation {
+    display: flex;
+    justify-content: left;
+    margin: 40px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.product-description {
+    flex: 1;
+}
+.purchase-section {
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+.buy-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.buy-button.primary {
+    background-color: #000;
+    color: #fff;
+}
+.note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+li {
+    margin-left: 20px;
+}
