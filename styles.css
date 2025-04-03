@@ -1,19 +1,23 @@
+/* Reset default margins, padding, and box-sizing for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Apply global font family */
 body {
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Styling for the logo */
 #logo {
     width: 100px; /* Slightly smaller logo */
     height: auto;
-    margin-top: 10px; /* Keep it close to the top */
+    margin-top: 10px; /* Keep logo close to the top */
 }
 
+/* Top section with background image */
 #top-div {
     width: 100vw;
     height: 330px;
@@ -23,63 +27,66 @@ body {
     background-repeat: no-repeat;
     color: white;
     display: flex;
-    flex-direction: column; /* Stacks logo and buttons vertically */
+    flex-direction: column; /* Stack logo and buttons vertically */
     align-items: center;
-    justify-content: flex-start; /* Aligns content to the top */
-    padding-top: 20px; /* Adjusted the padding to bring logo closer to top */
+    justify-content: flex-start; /* Align content to the top */
+    padding-top: 20px; /* Adjust padding */
 }
 
+/* Button container styling */
 #buttons {
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
-    margin-top: 10px; /* Reduced margin to move buttons closer to the logo */
-    width: 100%; /* Make the button container take full width */
-    padding: 0 20px; /* Added padding for button spacing on sides */
+    margin-top: 10px; /* Reduced margin */
+    width: 100%; /* Full width for buttons */
+    padding: 0 20px; /* Added padding for spacing */
 }
 
+/* Button styling */
 .btn {
-    background-color: #333; /* Dark gray color */
+    background-color: #333;
     color: white;
     border: none;
-    padding: 12px 0; /* Slightly reduced padding to make buttons shorter */
-    margin: 5px 0; /* Reduced margin to make buttons closer to each other */
+    padding: 12px 0;
+    margin: 5px 0;
     cursor: pointer;
-    font-size: 15px; /* Font size for readability */
+    font-size: 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is applied to buttons */
-    text-transform: uppercase; /* Capitalize button text */
-    width: 100%; /* Make buttons take full width */
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    width: 100%; /* Full width buttons */
 }
 
+/* Button hover effect */
 .btn:hover {
-    background-color: #555; /* Slightly lighter dark gray for hover effect */
+    background-color: #555;
 }
 
-/* New section styling */
+/* Section styling for prebuilt PC */
 #prebuilt-pc-section {
     width: 100%;
     text-align: center;
-    padding: 30px 20px; /* Reduced top padding to bring content closer to the top */
-    background-color: #f5f5f5; /* Light background color */
+    padding: 30px 20px;
+    background-color: #f5f5f5;
 }
 
 #prebuilt-pc-section h1 {
-    font-size: 22px; /* Large text size for the title */
-    color: #333; /* Dark gray color */
-    text-transform: uppercase; /* Capitalize all the text */
-    margin-top: 0; /* Remove any top margin */
+    font-size: 22px;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 0;
 }
 
 #prebuilt-pc-section p {
-    font-size: 10px; /* Smaller text size for the paragraph */
-    color: #666; /* Lighter gray color */
-    line-height: 1.6; /* Add space between lines */
+    font-size: 10px;
+    color: #666;
+    line-height: 1.6;
     margin-top: 15px;
-    text-transform: uppercase; /* Capitalize all the text */
+    text-transform: uppercase;
 }
 
-/* Ultra Gaming PC product styling */
+/* Product container for ultra gaming PCs */
 .products-container {
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +95,7 @@ body {
     margin-top: 30px;
 }
 
+/* Product card styling */
 .product-card {
     width: 320px;
     border-radius: 8px;
@@ -97,10 +105,12 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Hover effect for product cards */
 .product-card:hover {
     transform: translateY(-5px);
 }
 
+/* Image container inside product card */
 .product-image {
     width: 100%;
     height: 250px;
@@ -116,6 +126,7 @@ body {
     object-fit: contain;
 }
 
+/* Product details section inside product card */
 .product-details {
     padding: 20px;
 }
@@ -134,6 +145,7 @@ body {
     margin-bottom: 15px;
 }
 
+/* Styling for specification items */
 .spec-item {
     display: flex;
     margin-bottom: 5px;
@@ -145,6 +157,7 @@ body {
     min-width: 80px;
 }
 
+/* Price and button styling for product card */
 .product-price {
     font-size: 22px;
     font-weight: 700;
@@ -172,7 +185,7 @@ body {
     background-color: #555;
 }
 
-/* Footer Styles */
+/* Footer Styling */
 .footer {
     background-color: #333;
     color: #fff;
@@ -180,6 +193,7 @@ body {
     margin-top: 50px;
 }
 
+/* Footer content and layout */
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -195,6 +209,7 @@ body {
     padding: 0 15px;
 }
 
+/* Footer section headings */
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -213,12 +228,14 @@ body {
     background-color: #484a4b;
 }
 
+/* Footer section paragraphs */
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
+/* List and link styles in footer */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -238,6 +255,7 @@ body {
     color: #00a8f0;
 }
 
+/* Social media icon styling */
 .social-icons {
     display: flex;
     flex-wrap: wrap;
@@ -255,6 +273,7 @@ body {
     color: #00a8f0;
 }
 
+/* Footer bottom section */
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -263,103 +282,46 @@ body {
     font-size: 14px;
 }
 
-/* Responsive adjustments for footer */
+/* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .footer-section {
         min-width: 100%;
     }
 }
 
-/* Style for the clickable email link */
+/* Style for clickable email link */
 a.email-link {
-    color: #a7a7a7; /* Set an attractive color (light blue) */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Increase the font size slightly */
-    font-weight: 600; /* Make the text bold */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a.email-link:hover {
-    color: #a7a7a7; /* Darker shade of blue on hover */
-    transform: scale(1.05); /* Slightly enlarge the text on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: #a7a7a7;
+    transform: scale(1.05);
+    text-decoration: underline;
 }
 
-/* Optional: Add a focus effect for accessibility */
+/* Focus effect for accessibility on email link */
 a.email-link:focus {
-    outline: 2px solid #a7a7a7; /* Outline for focus */
-    outline-offset: 2px; /* Space between outline and link */
+    outline: 2px solid #a7a7a7;
+    outline-offset: 2px;
 }
 
-/* Main container styles */
+/* Container for prebuilt PC section */
 #prebuilt-pc-section {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 30px 15px;
     background-color: #f5f5f5;
     text-align: center;
 }
 
-/* Remove existing flex layout from product containers */
 .products-container {
-    display: block;
-    width: 100%;
-    margin: 0 0 20px 0;
-}
-
-/* Make product cards display side by side */
-@media (min-width: 768px) {
-    /* Create a 2-column layout */
-    .products-container {
-        width: 48%;
-        float: left;
-        margin-right: 4%;
-    }
-    
-    .products-container:nth-child(even) {
-        margin-right: 0;
-    }
-    
-    /* Clear the float after each pair */
-    .products-container:nth-child(2n+1) {
-        clear: left;
-    }
-}
-
-@media (min-width: 992px) {
-    /* Create a 3-column layout */
-    .products-container {
-        width: 31%;
-        margin-right: 3.5%;
-    }
-    
-    .products-container:nth-child(even) {
-        margin-right: 3.5%;
-    }
-    
-    .products-container:nth-child(3n) {
-        margin-right: 0;
-    }
-    
-    /* Clear the float after each triplet */
-    .products-container:nth-child(2n+1) {
-        clear: none;
-    }
-    
-    .products-container:nth-child(3n+1) {
-        clear: left;
-    }
-}
-
-/* Add clearfix to the parent */
-#prebuilt-pc-section::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Make sure product cards are full width of their container */
-.product-card {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
