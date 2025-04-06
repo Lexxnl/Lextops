@@ -1,0 +1,53 @@
+.build-help-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px; /* Increased space at the top for better separation */
+    
+    width: 80%; /* Slightly wider container */
+    min-height: 200px; /* Increased minimum height for more space */
+    background-image: url('0003-4.jpg');
+    background-size: cover; /* Use cover to ensure the image covers the container */
+    background-position-y: 40%; /* Center the image vertically */
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content more nicely */
+    padding: 30px; /* Add padding around the content for better spacing */
+    
+    text-align: center; /* Center the text */
+    font-family: 'Poppins', sans-serif; /* Use a clean, readable font */
+}
+
+
+.build-help-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Subtle text shadow for headings */
+}
+
+.build-help-container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow for paragraphs */
+}
+
+.build-help-container .cta-button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.build-help-container .cta-button:hover {
+    background-color: #2980b9;
+}

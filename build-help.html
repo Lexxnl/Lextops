@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lextops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="build-help.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Added Poppins font -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E04ERHXC4T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E04ERHXC4T');
+    </script>
+    <!-- End Google Analytics 4 -->
+</head>
+<body>
+    <script>
+        // Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <div class="build-help-container">
+        <h1>Build Help</h1>
+        <p>Er zijn veel zaken om rekening mee te houden bij het bouwen van een pc.</p>
+        <p> Om het proces te vereenvoudigen, hebben we een alles-in-één site samengesteld waar je alle grafieken, links en bronnen kunt vinden die je nodig hebt om je beste gaming-pc te bouwen.</p>
+    </div>
+
+</body>
+</html>
