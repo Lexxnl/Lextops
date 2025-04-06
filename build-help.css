@@ -1,53 +1,55 @@
 .build-help-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px; /* Increased space at the top for better separation */
-    
-    width: 80%; /* Slightly wider container */
-    min-height: 200px; /* Increased minimum height for more space */
-    background-image: url('0003-4.jpg');
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), /* Dark overlay */
+        url('0003-4.jpg');
     background-size: cover; /* Use cover to ensure the image covers the container */
     background-position-y: 40%; /* Center the image vertically */
     background-repeat: no-repeat;
-    color: white;
-    border-radius: 15px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center the content more nicely */
-    padding: 30px; /* Add padding around the content for better spacing */
-    
-    text-align: center; /* Center the text */
-    font-family: 'Poppins', sans-serif; /* Use a clean, readable font */
 }
 
 
 .build-help-container h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Subtle text shadow for headings */
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.build-help-container h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background-color: #00a8f0;
 }
 
 .build-help-container p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow for paragraphs */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-weight: 300;
 }
 
-.build-help-container .cta-button {
-    padding: 12px 24px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-}
-
-.build-help-container .cta-button:hover {
-    background-color: #2980b9;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .build-help-container {
+        padding: 20px;
+        margin: 20px 15px;
+    }
+    
+    .build-help-container h1 {
+        font-size: 28px;
+    }
 }
