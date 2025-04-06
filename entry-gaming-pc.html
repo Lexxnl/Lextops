@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Gaming PC - Lextops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="prebuilt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <div class="content">
+        <div class="navigation">
+            <p><a href="index.html">Home</a>/Entry Gaming PC</p>
+        </div>
+
+        <div class="gallery">
+            <div class="product-gallery">
+                <img src="0000-0.png" alt="Entry Gaming PC Afbeelding 1" class="gallery-image active">
+                <img src="0000-1.jpg" alt="Entry Gaming PC Afbeelding 2" class="gallery-image">
+                <img src="0000-2.jpg" alt="Entry Gaming PC Afbeelding 3" class="gallery-image">
+                <img src="0000-3.jpg" alt="Entry Gaming PC Afbeelding 4" class="gallery-image">
+                <img src="0000-4.jpg" alt="Entry Gaming PC Afbeelding 5" class="gallery-image">
+            </div>
+
+            <div class="gallery-nav" id="galleryNav"></div>
+        </div>
+
+        <h2 class="product-title">Entry Gaming PC – RTX 2060 | Ryzen 5 3600 | 32GB RAM | WIFI</h2>
+        <p class="short-description">Op zoek naar een krachtige gaming PC die moeiteloos de nieuwste games draait in 1080p? Deze stijlvolle, witgekleurde setup met RGB-verlichting is perfect voor zowel casual als competitieve gamers!</p>
+
+        <div class="product-description">
+            <h3>Specificaties:</h3>
+            <ul>
+                <li><strong>Processor:</strong> AMD Ryzen 5 3600</li>
+                <li><strong>Videokaart:</strong> NVIDIA GeForce RTX 2060</li>
+                <li><strong>Moederbord:</strong> B450 (wit design)</li>
+                <li><strong>Werkgeheugen:</strong> 32GB DDR4 3200MHz</li>
+                <li><strong>Opslag:</strong> 1TB NVMe SSD</li>
+                <li><strong>Voeding:</strong> Corsair 550W</li>
+                <li><strong>Behuizing:</strong> Witte kast met RGB-verlichting</li>
+                <li><strong>Besturingssysteem:</strong> Windows 11 Pro</li>
+                <li><strong>Netwerk:</strong> USB WiFi-adapter</li>
+            </ul>
+
+            <h3>Gaming prestaties (1080p, gemiddelde FPS):</h3>
+            <ul>
+                <li>🎮 Fortnite → 213 FPS (performance mode, pro settings)</li>
+                <li>🎮 Call of Duty: Black Ops 6 → 90 FPS (hoge/normale instellingen + DLSS)</li>
+                <li>🎮 Apex Legends → 137 FPS (hoge/lage instellingen mix)</li>
+            </ul>
+
+            <h3>Wat krijg je erbij?</h3>
+            <ul>
+                <li>✔️ De complete gaming PC</li>
+                <li>✔️ Voedingskabel</li>
+            </ul>
+        </div>
+
+        <div class="purchase-section">
+            <h2 class="price">€ 649,99</h2>
+            <p>Uitverkocht</p>
+            <a href="mailto:lex.kimmel@gmail.com?subject=Informatie%20over%20Entry%20Gaming%20PC&body=Hallo,%0A%0AIk%20heb%20interesse%20in%20de%20volgende%20PC%20en%20zou%20graag%20meer%20informatie%20willen:%0A%0AEntry%20Gaming%20PC%0A%2D%20Ryzen%205%203600%0A%2D%20RTX%202060%0A%2D%2032GB%20RAM%0A%2D%201TB%20SSD%0A%0AIk%20zie%20graag%20uw%20reactie%20tegemoet.%0A%0AMet%20vriendelijke%20groet,%0A%0A[UW NAAM]">
+                <button class="buy-button">Informeren Over</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery-image');
+        const navContainer = document.getElementById('galleryNav');
+
+        images.forEach((_, index) => {
+            const btn = document.createElement('button');
+            btn.classList.add('nav-button');
+            if (index === 0) btn.classList.add('active');
+            btn.setAttribute('onclick', `changeImage(${index})`);
+            navContainer.appendChild(btn);
+        });
+
+        const buttons = document.querySelectorAll('.nav-button');
+
+        function changeImage(index) {
+            currentIndex = index;
+            images.forEach((img, i) => {
+                img.classList.remove('active');
+                buttons[i].classList.remove('active');
+            });
+            images[currentIndex].classList.add('active');
+            buttons[currentIndex].classList.add('active');
+        }
+
+        // Swipe functionaliteit
+        let startX = 0;
+        let endX = 0;
+        const gallery = document.querySelector('.product-gallery');
+
+        gallery.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        gallery.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const threshold = 50;
+            if (startX - endX > threshold && currentIndex < images.length - 1) {
+                changeImage(currentIndex + 1);
+            } else if (endX - startX > threshold && currentIndex > 0) {
+                changeImage(currentIndex - 1);
+            }
+        }
+
+        changeImage(0);
+    </script>
+</body>
+</html>
