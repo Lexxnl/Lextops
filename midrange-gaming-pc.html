@@ -9,15 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
-        <a href="index.html"><img src="Logo.png" alt="Logo" id="logo"></a>
-        <div id="header-buttons">
-            <a class="header-button" href='index.html'>Home</a>
-            <a class="header-button" href='index.html'>Winkel</a>
-            <a class="header-button" href='index.html'>Build Help</a>
-            <a class="header-button" href='index.html'>Contact</a>
-        </div>
-    </div>
+    <script>
+        // Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', data);
+            });
+    </script>
 
     <div class="content">
         <div class="navigation">
@@ -78,40 +84,7 @@
         </div>
         
     </div>
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Over Ons</h3>
-                <p>Wij zijn gespecialiseerd in high-end gaming PC's en custom builds. Elke PC wordt met zorg samengesteld en getest om de beste prestaties te garanderen.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: <a href="mailto:lex.kimmel@gmail.com" class="email-link">lex.kimmel@gmail.com</a></p>
-                <p>Telefoon: <a href="tel:+31638027167" class="email-link">+31 6 38027167</a></p>
-                <p>Producten zijn op te halen in Deventer op aanvraag</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Klantenservice</h3>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Retourbeleid</a></li>
-                    <li><a href="#">Garantie</a></li>
-                    <li><a href="#">Verzending</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Volg Ons</h3>
-                <div class="social-icons">
-                    <a href="https://www.youtube.com/@LextopsPCs" class="social-icon"><img class="social-icon" src="https://img.icons8.com/m_outlined/512/FFFFFF/youtube.png"></a>
-                </div>
-            </div>
-        </div>
-        <p class="footer-bottom">© 2025 Lextops - Alle rechten voorbehouden</p>
-    </footer>
+
     <script>
         let currentIndex = 0;
         const images = document.querySelectorAll('.gallery-image');
