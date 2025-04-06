@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Lextops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E04ERHXC4T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E04ERHXC4T');
+    </script>
+    <!-- End Google Analytics 4 -->
+    <style>
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .faq-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+            text-transform: uppercase;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <div class="faq-container">
+        <h1 class="faq-title">Veelgestelde vragen</h1>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Hoe lang duurt het voordat mijn bestelling wordt geleverd?</h3>
+            <p class="faq-answer">Na bevestiging van je bestelling duurt het gemiddeld 3-5 werkdagen om je gaming PC te bouwen, testen en verzendklaar te maken. De levertijd is afhankelijk van de beschikbaarheid van componenten. Je ontvangt een bevestigingsmail met de verwachte levertijd zodra we je bestelling hebben ontvangen.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Zijn jullie computers geschikt voor zware games en toepassingen?</h3>
+            <p class="faq-answer">Absoluut! Al onze gaming PC's zijn specifiek ontworpen om de nieuwste games en toepassingen probleemloos te draaien. De specificaties zijn zorgvuldig geselecteerd om een optimale balans tussen prestaties en prijs te bieden. Van de Entry Gaming PC tot de Ultra Gaming PC, elke configuratie is geschikt voor zijn doelgroep.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Wat gebeurt er als er een onderdeel kapot gaat?</h3>
+            <p class="faq-answer">Alle onderdelen van onze PC's vallen onder de garantie. Mocht er een onderdeel defect raken, neem dan contact met ons op via e-mail. We zullen samen met jou het probleem diagnosticeren en zorgen voor een passende oplossing, zoals vervanging of reparatie. Meer informatie hierover vind je op onze garantiepagina.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Kan ik mijn PC later upgraden?</h3>
+            <p class="faq-answer">Ja, al onze systemen zijn gebouwd met standaard componenten die later gemakkelijk te upgraden zijn. We raden aan om eventuele upgrades zorgvuldig uit te voeren om compatibiliteitsproblemen te voorkomen. Neem gerust contact met ons op voor advies over mogelijke upgrades voor jouw specifieke build.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Wat zijn de betaalmogelijkheden?</h3>
+            <p class="faq-answer">We bieden verschillende betaalmogelijkheden, waaronder bankoverschrijving en andere veilige betaalmethoden. De exacte betalingsgegevens ontvang je na het plaatsen van je bestelling via e-mail. Heb je specifieke wensen qua betaling, laat het ons dan weten bij je bestelling.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Wat als ik hulp nodig heb bij het instellen van mijn nieuwe PC?</h3>
+            <p class="faq-answer">Elke PC wordt geleverd met basisinstructies voor de eerste opstart. Als je verdere hulp nodig hebt, staan we voor je klaar via e-mail. We kunnen je ook doorverwijzen naar handleidingen of tutorials voor specifieke software of instellingen. Onze klantenservice is erop gericht om je een zorgeloze ervaring te bieden.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Kan ik een PC laten bouwen volgens mijn eigen specificaties?</h3>
+            <p class="faq-answer">Ja, we bieden ook custom builds aan! Stuur ons een e-mail met je gewenste specificaties en budget, en we maken een voorstel op maat. Onze expertise helpt je bij het samenstellen van een systeem dat perfect aansluit bij jouw behoeften en budget. Kijk ook op onze Build Help pagina voor meer informatie.</p>
+        </div>
+    </div>
+</body>
+</html>

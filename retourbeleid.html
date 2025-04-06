@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retourbeleid - Lextops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E04ERHXC4T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E04ERHXC4T');
+    </script>
+    <!-- End Google Analytics 4 -->
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .policy-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+            text-transform: uppercase;
+        }
+        
+        .policy-section {
+            margin-bottom: 30px;
+        }
+        
+        .policy-subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .policy-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .policy-list {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .policy-list li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        .contact-info {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <div class="policy-container">
+        <h1 class="policy-title">Retourbeleid</h1>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Retourprocedure</h2>
+            <p class="policy-text">Als je besluit om je gaming PC te retourneren, volg dan deze stappen:</p>
+            <ol class="policy-list">
+                <li>Stuur een e-mail naar lex.kimmel@gmail.com met je ordernummer en de reden van retour (optioneel).</li>
+                <li>Wacht op onze bevestiging en instructies voor het terugsturen.</li>
+                <li>Zorg ervoor dat de PC in de originele verpakking wordt teruggestuurd.</li>
+                <li>Voeg alle accessoires, documentatie en eventuele geschenken toe die bij de oorspronkelijke levering waren inbegrepen.</li>
+                <li>Gebruik voldoende beschermingsmateriaal om transportschade te voorkomen.</li>
+            </ol>
+            <p class="policy-text">Let op: De kosten voor het terugzenden van de goederen komen voor jouw rekening, tenzij we hebben aangegeven deze kosten te dragen.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Staat van het Product</h2>
+            <p class="policy-text">Je bent alleen aansprakelijk voor waardevermindering van de gaming PC die het gevolg is van gebruik dat verder gaat dan nodig om de aard, kenmerken en werking van het product vast te stellen.</p>
+            <p class="policy-text">Dit betekent dat je de PC mag uitpakken en testen zoals je dat in een fysieke winkel zou doen, maar dat je deze niet intensief mag gebruiken. De PC moet in nieuwstaat, compleet en onbeschadigd worden teruggestuurd.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Terugbetaling</h2>
+            <p class="policy-text">Na ontvangst en controle van de geretourneerde PC, zullen we je binnen 14 dagen terugbetalen. De terugbetaling omvat het volledige aankoopbedrag, inclusief de standaard verzendkosten (indien van toepassing).</p>
+            <p class="policy-text">De terugbetaling zal plaatsvinden via dezelfde betaalmethode die je hebt gebruikt voor je aankoop, tenzij anders is overeengekomen.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Uitzonderingen</h2>
+            <p class="policy-text">Het herroepingsrecht is niet van toepassing op:</p>
+            <ul class="policy-list">
+                <li>Custom builds die volgens jouw specificaties zijn samengesteld.</li>
+                <li>Software waarvan de verzegeling is verbroken.</li>
+                <li>Producten die door hun aard niet kunnen worden teruggezonden om hygiënische redenen en waarvan de verzegeling is verbroken.</li>
+            </ul>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Heb je vragen over ons retourbeleid?</h3>
+            <p>Neem dan contact met ons op via e-mail: <a href="mailto:lex.kimmel@gmail.com" class="email-link">lex.kimmel@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

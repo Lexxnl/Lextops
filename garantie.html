@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garantie - Lextops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E04ERHXC4T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E04ERHXC4T');
+    </script>
+    <!-- End Google Analytics 4 -->
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .policy-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+            text-transform: uppercase;
+        }
+        
+        .policy-section {
+            margin-bottom: 30px;
+        }
+        
+        .policy-subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .policy-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .policy-list {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .policy-list li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        .warranty-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .warranty-table th, .warranty-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .warranty-table th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+        
+        .warranty-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .contact-info {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <div class="policy-container">
+        <h1 class="policy-title">Garantie</h1>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Onze Garantiebelofte</h2>
+            <p class="policy-text">Bij Lextops staat kwaliteit voorop. We zijn trots op de gaming PC's die we bouwen en staan achter onze producten met een uitgebreide garantie. Alle PC's zijn gebouwd met zorgvuldig geselecteerde componenten en worden uitvoerig getest voordat ze worden verzonden.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Garantieperiode</h2>
+            <p class="policy-text">Lextops biedt de volgende garantieperiodes:</p>
+            <table class="warranty-table">
+                <tr>
+                    <th>Component</th>
+                    <th>Garantieperiode</th>
+                </tr>
+                <tr>
+                    <td>Compleet systeem</td>
+                    <td>12 maanden</td>
+                </tr>
+                <tr>
+                    <td>Moederbord</td>
+                    <td>fabrieksgarantie indien van toepassing</td>
+                </tr>
+                <tr>
+                    <td>Processor (CPU)</td>
+                    <td>3 jaar</td>
+                </tr>
+                <tr>
+                    <td>Grafische kaart (GPU)</td>
+                    <td>fabrieksgarantie indien van toepassing</td>
+                </tr>
+                <tr>
+                    <td>Geheugen (RAM)</td>
+                    <td>3 jaar</td>
+                </tr>
+                <tr>
+                    <td>Opslag (SSD/HDD)</td>
+                    <td>3 jaar</td>
+                </tr>
+                <tr>
+                    <td>Voeding (PSU)</td>
+                    <td>3 jaar</td>
+                </tr>
+                <tr>
+                    <td>Koeling</td>
+                    <td>fabrieksgarantie indien van toepassing</td>
+                </tr>
+                <tr>
+                    <td>Behuizing</td>
+                    <td>fabrieksgarantie indien van toepassing</td>
+                </tr>
+            </table>
+            <p class="policy-text">De garantieperiode gaat in op de datum van levering van je PC.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Wat dekt de garantie?</h2>
+            <p class="policy-text">Onze garantie dekt defecten die het gevolg zijn van fabricagefouten of materiaalgebreken. Bij een defect zullen we:</p>
+            <ul class="policy-list">
+                <li>Het defecte onderdeel repareren of vervangen.</li>
+                <li>Indien nodig, het hele systeem vervangen als reparatie niet mogelijk is.</li>
+                <li>Alle arbeidskosten voor diagnose en reparatie dekken.</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Wat dekt de garantie niet?</h2>
+            <p class="policy-text">De garantie is niet van toepassing op:</p>
+            <ul class="policy-list">
+                <li>Schade veroorzaakt door verkeerd gebruik, ongelukken of verwaarlozing.</li>
+                <li>Schade veroorzaakt door extreme omstandigheden zoals vocht, hitte of stof.</li>
+                <li>Wijzigingen of reparaties uitgevoerd door onbevoegden.</li>
+                <li>Normale slijtage van componenten.</li>
+                <li>Cosmetische schade die geen invloed heeft op de functionaliteit.</li>
+                <li>Softwareproblemen die niet gerelateerd zijn aan hardware.</li>
+                <li>Verlies van data - maak altijd back-ups!</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Garantieprocedure</h2>
+            <p class="policy-text">Als je een probleem ervaart met je Lextops gaming PC, volg dan deze stappen:</p>
+            <ol class="policy-list">
+                <li>Neem contact met ons op via e-mail (lex.kimmel@gmail.com) met een gedetailleerde beschrijving van het probleem.</li>
+                <li>Onze technische ondersteuning zal je helpen met het diagnosticeren van het probleem en mogelijke oplossingen bieden.</li>
+                <li>Als het probleem niet op afstand kan worden opgelost, zullen we je instructies geven voor het retourneren van de PC of het defecte onderdeel.</li>
+                <li>Na ontvangst zullen we het probleem verhelpen en de PC zo snel mogelijk terugsturen.</li>
+            </ol>
+        </div>
+        
+        <div class="policy-section">
+            <h2 class="policy-subtitle">Fabrieksgarantie</h2>
+            <p class="policy-text">Naast onze eigen garantie, behouden alle componenten in je PC hun originele fabrieksgarantie. In sommige gevallen kan de fabrieksgarantie langer zijn dan onze standaard garantieperiode. We kunnen je helpen bij het indienen van claims bij de fabrikant indien nodig.</p>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Heb je vragen over onze garantie?</h3>
+            <p>Neem dan contact met ons op via e-mail: <a href="mailto:lex.kimmel@gmail.com" class="email-link">lex.kimmel@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
