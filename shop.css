@@ -51,7 +51,7 @@
 /* Product card styling - Width is now fixed regardless of screen size */
 .product-card {
     min-width: 320px; /* Changed from width to min-width to prevent shrinking */
-    max-width: 380px;
+    max-width: 320px;
     flex: 0 0 auto; /* Prevent cards from growing or shrinking */
     border-radius: 8px;
     overflow: hidden;
