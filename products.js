@@ -1,5 +1,30 @@
 const products = {
+    "rog-strix-rtx-3070ti": {
+    title: "ROG Strix RTX 3070 Ti 8GB GDDR6X",
+    category: "Videokaarten",
+    images: [
+      "https://lh3.googleusercontent.com/d/1f9ZTKl1goykLjfigYpfCqcabZUIMn2Ou",
+      "https://lh3.googleusercontent.com/d/1ciuBCcJulyQekiJv36_dSPeEKWwQay93"
+    ],
+    price: "€ 379,99",
+    description: "Te koop: krachtige en zeer gewilde ASUS ROG Strix RTX 3070 Ti. Perfect voor 1440p gaming met hoge FPS en ondersteuning voor ray tracing en DLSS. Deze kaart is ideaal voor zowel gamers als content creators.",
+    specs: [
+      "Merk: ASUS ROG Strix",
+      "Model: GeForce RTX 3070 Ti",
+      "VRAM: 8GB GDDR6X",
+      "Koeling: Triple-fan design met massief koelblok",
+      "Aansluitingen: 3x DisplayPort, 2x HDMI",
+      "Stroomaansluiting: 2x 8-pin",
+      "RGB-verlichting: Ja (Aura Sync compatibel)",
+      "Ondersteuning: Ray tracing, DLSS, NVIDIA Reflex"
+    ],
+    condition: "Uitstekende staat – volledig getest en stofvrij. Geen coil whine.",
+    shipping: "Kan verzonden worden of opgehaald in Deventer. Goed verpakt met antistatische bescherming.",
+    availability: "Op voorraad"
+  },
+
   "midrange-gaming-pc": {
+    category: "Desktop Pc's",
     title: "Midrange Gaming PC",
     images: ["0001-0.png", "0001-1.png", "0001-2.png", "0001-3.jpg", "0001-4.jpg"],
     price: "€ 649,99",
@@ -18,9 +43,10 @@ const products = {
       "🎮 Cyberpunk 2077 → 65 FPS (hoge instellingen)",
       "🎮 Fortnite → 140 FPS (performance mode)",
       "🎮 Call of Duty: Warzone → 120 FPS (hoge instellingen)"
-    ],
+    ]
   },
   "ultra-gaming-pc": {
+    category: "Desktop Pc's",
     title: "Ultra Gaming PC (Limited Edition)",
     images: ["0003-0.png", "0003-1.png", "0003-2.png", "0003-3.jpg", "0003-4.jpg"],
     price: "€ 814,99",
@@ -34,9 +60,10 @@ const products = {
       "PSU: White 650W + Cable Extensions",
       "Koeling: Thermalright Aqua Elite 240 White AIO",
       "Behuizing: Mars Gaming MC-VIEWW Fishtank White"
-    ],
+    ]
   },
   "value-tier-gaming-pc": {
+    category: "Desktop Pc's",
     title: "Value Tier Gaming PC",
     images: ["0002-0.png", "0002-1.jpg", "0002-2.jpg", "0002-3.jpg"],
     price: "€ 649,99",
@@ -59,6 +86,7 @@ const products = {
     availability: "Uitverkocht"
   },
   "entry-gaming-pc": {
+    category: "Desktop Pc's",
     title: "Entry Gaming PC – RTX 2060 | Ryzen 5 3600 | 32GB RAM | WIFI",
     images: ["0000-0.png", "0000-1.jpg", "0000-2.jpg", "0000-3.jpg", "0000-4.jpg"],
     price: "€ 649,99",
@@ -79,6 +107,6 @@ const products = {
       "🎮 Call of Duty: Black Ops 6 → 90 FPS (hoge/normale instellingen + DLSS)",
       "🎮 Apex Legends → 137 FPS (hoge/lage instellingen mix)"
     ],
-    availability: "Uitverkocht" // Customizable availability text
+    availability: "Uitverkocht"
   }
 };

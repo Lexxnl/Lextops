@@ -1,19 +1,19 @@
 /* Section styling for prebuilt PC */
-#prebuilt-pc-section {
+#part-section {
     width: 100%;
     text-align: center;
     padding: 30px 20px;
     background-color: #f5f5f5;
 }
 
-#prebuilt-pc-section h1 {
+#part-section h1 {
     font-size: 22px;
     color: #333;
     text-transform: uppercase;
     margin-top: 0;
 }
 
-#prebuilt-pc-section p {
+#part-section p {
     font-size: 10px;
     color: #666;
     line-height: 1.6;
