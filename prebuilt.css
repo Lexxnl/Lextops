@@ -112,13 +112,13 @@ li {
     margin-left: 20px;
 }
 
-.content {
+#content {
     margin-left: 20%;
     max-width: 60%;
 }
 
 @media screen and (max-width: 768px) {
-    .content {
+    #content {
         display: flex;
         flex-direction: column;
         max-width: 95%;
@@ -148,7 +148,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-    .content {
+    #content {
         display: flex;
         flex-direction: column;
         max-width: 1000px;
