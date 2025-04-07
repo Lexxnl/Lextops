@@ -9,8 +9,8 @@ const products = {
       "https://lh3.googleusercontent.com/d/1PhbAzgh4PEOLbHELRmI7qks4cOCLvegh",
       
     ],
-    price: "€ 419,95",
-    description: "Te koop: krachtige en zeer gewilde ASUS ROG Strix RTX 3070 Ti. Perfect voor 1440p gaming met hoge FPS en ondersteuning voor ray tracing en DLSS. Deze kaart is ideaal voor zowel gamers als content creators.",
+    price: "€ 419,99",
+    description: "Te koop: krachtige ASUS ROG Strix RTX 3070 Ti. Perfect voor 1440p gaming en ondersteuning voor ray tracing en DLSS.",
     specs: [
       "Merk: ASUS ROG Strix",
       "Model: GeForce RTX 3070 Ti",
@@ -23,8 +23,56 @@ const products = {
     ],
     condition: "Uitstekende staat – volledig getest en stofvrij. Geen coil whine.",
     shipping: "Kan verzonden worden of opgehaald in Deventer. Goed verpakt met antistatische bescherming.",
-    availability: "Op voorraad"
+    availability: "Op voorraad",
+    includes : ["✔️ Antistatische bescherming"]
   },
+  "asus-dual-rtx-2070-mini-oc-edition": {
+    title: "Asus Dual GeForce RTX 2070 Mini OC edition",
+    category: "Videokaarten",
+    images: [
+      "https://lh3.googleusercontent.com/d/1psBNzYV9hzwVJ2WuRjytBgvNllanvv2W",
+      "https://lh3.googleusercontent.com/d/1C3DTJj74LIWbvDmbM_E0qhxeGu9vRStP",
+      "https://lh3.googleusercontent.com/d/17AALxeYln1P54__3fh1HRLFaOOg2iyEf",
+      "https://lh3.googleusercontent.com/d/1Q3YL0F1yIMkL5fs6vPZZ88VUTu9nv_1k",
+    ],
+    price: "€ 174,99",
+    description: "Te koop: krachtige ASUS Dual RTX 2070. Ideaal voor 1440p gaming en ondersteuning voor ray tracing en DLSS.",
+    specs: [
+      "Merk: ASUS Dual",
+      "Model: GeForce RTX 2070",
+      "VRAM: 8GB GDDR6",
+      "Koeling: Triple-fan design met massief koelblok",
+      "Aansluitingen: 3x DisplayPort, 2x HDMI",
+      "Stroomaansluiting: 2x 8-pin",
+      "RGB-verlichting: Ja (Aura Sync compatibel)",
+      "Ondersteuning: Ray tracing, DLSS, NVIDIA Reflex"
+    ],
+    condition: "Uitstekende staat – volledig getest en stofvrij. Geen coil whine.",
+    shipping: "Kan verzonden worden of opgehaald in Deventer. Goed verpakt met antistatische bescherming.",
+    availability: "Op voorraad",
+    includes : ["✔️ Antistatische bescherming"]
+  },
+  "gigabyte-rtx-3060": {
+      category: "Videokaarten",
+      title: "Gigabyte RTX 3060 12GB",
+      price: "€ 254,99", // Example price
+      description: "Te koop: krachtige Gigabyte RTX 3060 met 12GB GDDR6 VRAM. Geschikt voor 1440p gaming en content creatie.",
+      images: [
+          "https://lh3.googleusercontent.com/d/193ezVophEv_7WF-PoxeriSUzXhT9EoJX",  
+          "https://lh3.googleusercontent.com/d/14AZfcZ1hTPlUYSXUy0u0u5d3kyqQPbU2", 
+          "https://lh3.googleusercontent.com/d/193ezVophEv_7WF-PoxeriSUzXhT9EoJX",
+      ],
+      specs: [
+          "GPU: NVIDIA GeForce RTX 3060",
+          "Memory: 12GB GDDR6",
+          "Base Clock: 1.32 GHz",
+          "Boost Clock: 1.78 GHz",
+          "Ports: 3x DisplayPort, 1x HDMI",
+          "Cooling: Dual-fan"
+      ],
+      availability: "Uitverkocht",
+      includes : ["✔️ Originele Doos"]
+    },
 
   "midrange-gaming-pc": {
     category: "Desktop Pc's",
