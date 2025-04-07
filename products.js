@@ -19,7 +19,6 @@ const products = {
       "🎮 Fortnite → 140 FPS (performance mode)",
       "🎮 Call of Duty: Warzone → 120 FPS (hoge instellingen)"
     ],
-    includes: ["De complete gaming PC", "Voedingskabel"]
   },
   "ultra-gaming-pc": {
     title: "Ultra Gaming PC (Limited Edition)",
@@ -36,7 +35,6 @@ const products = {
       "Koeling: Thermalright Aqua Elite 240 White AIO",
       "Behuizing: Mars Gaming MC-VIEWW Fishtank White"
     ],
-    includes: ["Windows 11 Pro Geïnstalleerd", "Stroomkabel"]
   },
   "value-tier-gaming-pc": {
     title: "Value Tier Gaming PC",
@@ -58,7 +56,7 @@ const products = {
       "🎮 Fortnite → 160 FPS (performance mode)",
       "🎮 Call of Duty: Warzone → 135 FPS (hoge instellingen)"
     ],
-    includes: ["De complete gaming PC", "Voedingskabel"]
+    availability: "Uitverkocht"
   },
   "entry-gaming-pc": {
     title: "Entry Gaming PC – RTX 2060 | Ryzen 5 3600 | 32GB RAM | WIFI",
@@ -81,6 +79,6 @@ const products = {
       "🎮 Call of Duty: Black Ops 6 → 90 FPS (hoge/normale instellingen + DLSS)",
       "🎮 Apex Legends → 137 FPS (hoge/lage instellingen mix)"
     ],
-    includes: ["✔️ De complete gaming PC", "✔️ Voedingskabel"]
+    availability: "Uitverkocht" // Customizable availability text
   }
 };

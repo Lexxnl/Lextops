@@ -1,7 +1,7 @@
 // load-product.js
 function getProductKeyFromURL() {
   const params = new URLSearchParams(window.location.search);
-  return params.get("id"); // bijv. ?id=midrange-gaming-pc
+  return params.get("id"); // bijvoorbeeld ?id=midrange-gaming-pc
 }
 
 function generateProductPage(product) {
@@ -19,7 +19,20 @@ function generateProductPage(product) {
 
   let specsHTML = product.specs.map(s => `<li><strong>${s.split(":")[0]}:</strong> ${s.split(":")[1]}</li>`).join("");
   let fpsHTML = product.fps ? product.fps.map(f => `<li>${f}</li>`).join("") : '';
-  let includesHTML = product.includes.map(i => `<li>${i}</li>`).join("");
+  
+  // Ensure 'includes' is always an array
+  const includes = Array.isArray(product.includes) ? product.includes : ["✔️ Windows 11 Pro Geïnstalleerd", "✔️ Voedingskabel", "✔️ De complete gaming PC"];
+  
+  let includesHTML = includes.map(i => `<li>${i}</li>`).join("");
+
+  // Default email if not provided in product data
+  const contactEmail = product.contactEmail || "lex.kimmel@gmail.com";
+
+  // Customizable mailto body with placeholders
+  const mailtoBody = `Hallo,%0A%0AIk wil graag de volgende PC bestellen:%0A%0A${product.title}%0A${product.specs.join('%0A')}%0A%0AIk zie graag een reactie tegemoet.%0A%0AMet vriendelijke groet,%0A%0A[UW NAAM]`;
+
+  // Customizable availability text
+  const availabilityText = product.availability || "Nog slechts 1 beschikbaar"; // Default if not provided
 
   container.innerHTML = `
     <div class="navigation">
@@ -44,9 +57,10 @@ function generateProductPage(product) {
 
     <div class="purchase-section">
       <h2 class="price">${product.price}</h2>
-      <p>Nog slechts 1 beschikbaar</p>
-      <a href="mailto:lex.kimmel@gmail.com?subject=Informatie%20over%20${encodeURIComponent(product.title)}"><button class="buy-button">Informeren Over</button></a>
-      <a href="mailto:lex.kimmel@gmail.com?subject=Bestelling%20${encodeURIComponent(product.title)}%20${encodeURIComponent(product.price)}"><button class="buy-button primary">Bestellen</button></a>
+      <p>${availabilityText}</p> <!-- Customizable availability text -->
+      <a href="mailto:${contactEmail}?subject=Bestelling%20${encodeURIComponent(product.title)}&body=${mailtoBody}">
+        <button class="buy-button primary">Bestellen</button>
+      </a>
     </div>
   `;
 }

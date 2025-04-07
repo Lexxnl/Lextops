@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lextops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Added Poppins font -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E04ERHXC4T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E04ERHXC4T');
+    </script>
+    <!-- End Google Analytics 4 -->
+</head>
+<body>
+    <script>
+        // Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <div id="prebuilt-pc-section">
+        <h1>Prebuilt Gaming PC's</h1>
+        <p>Er is een grote vraag naar deze gaming PC's. We waarderen uw geduld wanneer een build op het moment 'uitverkocht' is. We bouwen zo snel als we kunnen.</p>
+        
+        <div class="products-container" id="products-container">
+            <!-- Product cards will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <script src="products.js"></script> <!-- Include the products.js file -->
+
+    <script>
+        // Function to generate product cards dynamically
+        function loadProducts() {
+            const productsContainer = document.getElementById('products-container');
+
+            // Loop through the first 4 products in the products.js
+            const productKeys = Object.keys(products).slice(0, 4); // First 4 products
+
+            productKeys.forEach(key => {
+                const product = products[key];
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+
+                // Product Image
+                const productImage = document.createElement('div');
+                productImage.classList.add('product-image');
+                const imageLink = document.createElement('a');
+                imageLink.href = `product.html?id=${key}`;
+                const image = document.createElement('img');
+                image.src = product.images[0]; // Use the first image
+                image.alt = product.title;
+                imageLink.appendChild(image);
+                productImage.appendChild(imageLink);
+
+                // Product Details
+                const productDetails = document.createElement('div');
+                productDetails.classList.add('product-details');
+                const title = document.createElement('h3');
+                title.classList.add('product-title');
+                title.textContent = product.title;
+
+                // Specifications
+                const productSpecs = document.createElement('div');
+                productSpecs.classList.add('product-specs');
+                product.specs.forEach(spec => {
+                    const specItem = document.createElement('div');
+                    specItem.classList.add('spec-item');
+                    const specLabel = document.createElement('span');
+                    specLabel.classList.add('spec-label');
+                    specLabel.textContent = spec.split(':')[0] + ":";
+                    const specValue = document.createElement('span');
+                    specValue.textContent = spec.split(':')[1];
+                    specItem.appendChild(specLabel);
+                    specItem.appendChild(specValue);
+                    productSpecs.appendChild(specItem);
+                });
+
+                // Price
+                const price = document.createElement('div');
+                price.classList.add('product-price');
+                price.textContent = product.price;
+
+                // Order Button
+                const orderButton = document.createElement('a');
+                orderButton.href = `mailto:lex.kimmel@gmail.com?subject=Bestelling%20${product.title}%20${product.price}&body=Hallo,%0A%0AIk%20wil%20graag%20de%20volgende%20PC%20bestellen:%0A%0A${product.title}%0A${product.specs.map(spec => `%2D%20${spec}`).join('%0A')}`;
+                orderButton.classList.add('product-button');
+                orderButton.textContent = "Bestellen";
+
+                // Append all elements
+                productDetails.appendChild(title);
+                productDetails.appendChild(productSpecs);
+                productDetails.appendChild(price);
+                productDetails.appendChild(orderButton);
+
+                productCard.appendChild(productImage);
+                productCard.appendChild(productDetails);
+
+                // Add the card to the container
+                productsContainer.appendChild(productCard);
+            });
+        }
+
+        // Call the function to load products when the page is ready
+        loadProducts();
+    </script>
+</body>
+</html>
