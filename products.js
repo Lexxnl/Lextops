@@ -4,7 +4,10 @@ const products = {
     category: "Videokaarten",
     images: [
       "https://lh3.googleusercontent.com/d/1f9ZTKl1goykLjfigYpfCqcabZUIMn2Ou",
-      "https://lh3.googleusercontent.com/d/1ciuBCcJulyQekiJv36_dSPeEKWwQay93"
+      "https://lh3.googleusercontent.com/d/12zvLLMhJtXN8rUkUuvHCikuCB_GcPmfz",
+      "https://lh3.googleusercontent.com/d/1ciuBCcJulyQekiJv36_dSPeEKWwQay93",
+      "https://lh3.googleusercontent.com/d/1PhbAzgh4PEOLbHELRmI7qks4cOCLvegh",
+      
     ],
     price: "€ 419,95",
     description: "Te koop: krachtige en zeer gewilde ASUS ROG Strix RTX 3070 Ti. Perfect voor 1440p gaming met hoge FPS en ondersteuning voor ray tracing en DLSS. Deze kaart is ideaal voor zowel gamers als content creators.",
