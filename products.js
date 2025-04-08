@@ -74,6 +74,24 @@ const products = {
       includes : ["✔️ Originele Doos"]
     },
 
+  "ultra-gaming-pc": {
+    category: "Desktop Pc's",
+    title: "Ultra Gaming PC (Limited Edition)",
+    images: ["0003-0.png", "0003-1.png", "0003-2.png", "0003-3.jpg", "0003-4.jpg"],
+    price: "€ 814,99",
+    description: "Op zoek naar een krachtige, stijlvolle en toekomstbestendige gaming PC? Deze volledig witte setup is perfect voor gaming, contentcreatie en multitasking!",
+    specs: [
+      "CPU: AMD Ryzen 5 5600X",
+      "GPU: MSI RTX 3060 Ti Gaming X",
+      "RAM: 32GB DDR4 3200MHz",
+      "Moederbord: White B450 mATX",
+      "Opslag: 1TB NVMe SSD",
+      "PSU: White 650W + Cable Extensions",
+      "Koeling: Thermalright Aqua Elite 240 White AIO",
+      "Behuizing: Mars Gaming MC-VIEWW Fishtank White"
+    ]
+  },
+
   "midrange-gaming-pc": {
     category: "Desktop Pc's",
     title: "Midrange Gaming PC",
@@ -94,25 +112,10 @@ const products = {
       "🎮 Cyberpunk 2077 → 65 FPS (hoge instellingen)",
       "🎮 Fortnite → 140 FPS (performance mode)",
       "🎮 Call of Duty: Warzone → 120 FPS (hoge instellingen)"
-    ]
+    ],
+    availability: "Uitverkocht"
   },
-  "ultra-gaming-pc": {
-    category: "Desktop Pc's",
-    title: "Ultra Gaming PC (Limited Edition)",
-    images: ["0003-0.png", "0003-1.png", "0003-2.png", "0003-3.jpg", "0003-4.jpg"],
-    price: "€ 814,99",
-    description: "Op zoek naar een krachtige, stijlvolle en toekomstbestendige gaming PC? Deze volledig witte setup is perfect voor gaming, contentcreatie en multitasking!",
-    specs: [
-      "CPU: AMD Ryzen 5 5600X",
-      "GPU: MSI RTX 3060 Ti Gaming X",
-      "RAM: 32GB DDR4 3200MHz",
-      "Moederbord: White B450 mATX",
-      "Opslag: 1TB NVMe SSD",
-      "PSU: White 650W + Cable Extensions",
-      "Koeling: Thermalright Aqua Elite 240 White AIO",
-      "Behuizing: Mars Gaming MC-VIEWW Fishtank White"
-    ]
-  },
+
   "value-tier-gaming-pc": {
     category: "Desktop Pc's",
     title: "Value Tier Gaming PC",
