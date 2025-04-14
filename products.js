@@ -89,7 +89,8 @@ const products = {
       "PSU: White 650W + Cable Extensions",
       "Koeling: Thermalright Aqua Elite 240 White AIO",
       "Behuizing: Mars Gaming MC-VIEWW Fishtank White"
-    ]
+    ],
+    availability: "Uitverkocht"
   },
 
   "midrange-gaming-pc": {
