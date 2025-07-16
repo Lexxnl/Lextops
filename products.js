@@ -1,4 +1,38 @@
 const products = {
+  "pc1-3060ti-white": {
+    category: "Desktop Pc's",
+    title: "White Gaming PC – RTX 3060 Ti | Ryzen 5 3600 | 16GB RGB | 1TB NVMe",
+    images: [
+      "pc1/807a9479-1f62-4426-93b3-6d4b4d6d41a7 (1).jpg",
+      "pc1/d95755cc-0d15-4144-8919-e91430cb6217.jpg",
+      "pc1/image (3).avif",
+      "pc1/image (4).avif",
+      "pc1/image (5).avif",
+      "pc1/image (6).avif"
+    ],
+    price: "€ 749,99",
+    description: "Op zoek naar een krachtige en stijlvolle game PC? Deze volledig witte setup is ideaal voor high-end gaming, streaming en contentcreatie. Met de Ryzen 5 3600 en de MSI RTX 3060 Ti Ventus speel je moeiteloos de nieuwste games op hoge instellingen. De vijf case fans zorgen daarbij voor lage temperaturen en een stille werking. Inclusief glazen zijpanelen! Zelf gebouwde prebuilt met gloednieuwe onderdelen (CPU en GPU refurbished). Goed getest en direct klaar voor gebruik.",
+    specs: [
+      "Processor: AMD Ryzen 5 3600",
+      "Videokaart: MSI GeForce RTX 3060 Ti",
+      "Werkgeheugen: Corsair Vengeance RGB 2x8GB",
+      "Opslag: Lexar 1TB NVMe SSD",
+      "Voeding: 600W",
+      "Netwerk: USB WiFi-adapter + bedrade aansluiting",
+      "Moederbord: Gigabyte Aorus B550I Pro WiFi",
+      "Case: Witte behuizing met glazen zijpanelen en 5 case fans"
+    ],
+    fps: [
+      "🎮 Cyberpunk 2077 → ± 120 FPS (hoge instellingen)",
+      "🎮 Fortnite → ± 140 FPS (performance mode)",
+      "🎮 Minecraft → ± 332 FPS (hoge instellingen)"
+    ],
+    availability: "Op voorraad",
+    includes: [
+      "✔️ De complete gaming PC",
+      "✔️ Voedingskabel"
+    ]
+  },
     "rog-strix-rtx-3070ti": {
     title: "ROG Strix RTX 3070 Ti 8GB GDDR6X",
     category: "Videokaarten",
